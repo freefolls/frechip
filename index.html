@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Offers & App Discovery Guide</title>
+  <meta
+    name="description"
+    content="Explore apps, surveys, and digital offers in one simple guide. Discover popular categories, learn how it works, and access featured platforms."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="text/javascript" src="https://inpmz.ttrk.io/track.js?rtkcmpid=69aacfcad725cebbfafe0f8b"></script>
+  <style>
+    :root{
+      --bg:#f4f7ff;
+      --bg-soft:#eef2ff;
+      --card:#ffffff;
+      --text:#111827;
+      --muted:#5b6475;
+      --line:#dfe5f2;
+      --primary:#5b4bff;
+      --primary-dark:#4738ea;
+      --primary-soft:#ede9ff;
+      --accent:#7c6cff;
+      --shadow:0 18px 50px rgba(30,41,59,.08);
+      --radius:22px;
+      --radius-sm:16px;
+      --container:1120px;
+    }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      margin:0;
+      font-family:'Inter', Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(124,108,255,.14), transparent 28%),
+        radial-gradient(circle at top right, rgba(91,75,255,.10), transparent 22%),
+        linear-gradient(180deg,#f8faff 0%,#f4f7ff 100%);
+      color:var(--text);
+      line-height:1.6;
+      padding-bottom:100px;
+    }
+
+    img{
+      max-width:100%;
+      display:block;
+    }
+
+    a{
+      text-decoration:none;
+    }
+
+    .container{
+      max-width:var(--container);
+      margin:0 auto;
+      padding:0 20px;
+    }
+
+    .topbar{
+      background:#111827;
+      color:#fff;
+      font-size:13px;
+    }
+
+    .topbar-inner{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:10px;
+      text-align:center;
+      padding:10px 0;
+    }
+
+    .site-header{
+      padding:18px 0 0;
+    }
+
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      padding:14px 18px;
+      background:rgba(255,255,255,.72);
+      backdrop-filter:blur(14px);
+      border:1px solid rgba(255,255,255,.8);
+      border-radius:20px;
+      box-shadow:0 12px 30px rgba(91,75,255,.07);
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      font-weight:800;
+      color:var(--text);
+      letter-spacing:-0.02em;
+    }
+
+    .brand-mark{
+      width:42px;
+      height:42px;
+      border-radius:14px;
+      display:grid;
+      place-items:center;
+      color:#fff;
+      background:linear-gradient(135deg,var(--primary),#8c7bff);
+      font-weight:800;
+      box-shadow:0 10px 22px rgba(91,75,255,.25);
+      flex:0 0 auto;
+    }
+
+    .brand small{
+      display:block;
+      font-size:12px;
+      color:var(--muted);
+      font-weight:600;
+      letter-spacing:0;
+    }
+
+    .nav-links{
+      display:flex;
+      align-items:center;
+      gap:22px;
+      flex-wrap:wrap;
+    }
+
+    .nav-links a{
+      color:#344054;
+      font-size:14px;
+      font-weight:600;
+    }
+
+    .nav-cta,
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      min-height:48px;
+      padding:0 22px;
+      border-radius:14px;
+      border:none;
+      cursor:pointer;
+      font-weight:700;
+      font-size:15px;
+      transition:.25s ease;
+    }
+
+    .nav-cta,
+    .btn-primary{
+      background:linear-gradient(135deg, #cce718, #e55507);
+      color:#000000;
+      box-shadow:0 12px 24px rgba(91,75,255,.24);
+    }
+
+    .nav-cta:hover,
+    .btn-primary:hover{
+      transform:translateY(-2px);
+      background:linear-gradient(135deg,var(--primary-dark),var(--primary));
+      color:#fff;
+    }
+
+    .btn-secondary{
+      background:#fff;
+      color:var(--primary);
+      border:1px solid #d8def0;
+      box-shadow:0 10px 24px rgba(15,23,42,.05);
+    }
+
+    .hero{
+      padding:28px 0 26px;
+    }
+
+    .hero-wrap{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:34px;
+      align-items:center;
+      background:linear-gradient(135deg,#5b4bff 0%, #7868ff 60%, #8d82ff 100%);
+      border-radius:30px;
+      overflow:hidden;
+      position:relative;
+      box-shadow:0 28px 70px rgba(91,75,255,.24);
+    }
+
+    .hero-wrap::before{
+      content:"";
+      position:absolute;
+      right:-120px;
+      top:-80px;
+      width:320px;
+      height:320px;
+      border-radius:50%;
+      background:rgba(255,255,255,.10);
+    }
+
+    .hero-wrap::after{
+      content:"";
+      position:absolute;
+      left:-60px;
+      bottom:-120px;
+      width:260px;
+      height:260px;
+      border-radius:50%;
+      background:rgba(255,255,255,.08);
+    }
+
+    .hero-copy{
+      padding:52px 14px;
+      color:#fff;
+      position:relative;
+      z-index:1;
+    }
+
+    .hero h1{
+      margin:0;
+      font-size:38px;
+      line-height:1.08;
+      letter-spacing:-0.04em;
+      max-width:520px;
+    }
+
+    .hero p{
+      margin:18px 0 0;
+      font-size:15px;
+      color:rgba(255,255,255,.9);
+      max-width:520px;
+    }
+
+    .hero-actions{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      margin-top:24px;
+    }
+
+    .hero-actions .btn-secondary{
+      background:rgba(255,255,255,.14);
+      color:#fff;
+      border:1px solid rgba(255,255,255,.22);
+      box-shadow:none;
+    }
+
+    .hero-media{
+      position:relative;
+      z-index:1;
+      padding:28px 28px 28px 28px;
+          display: flex;
+    column-gap: 10px;
+    }
+
+    .hero-offer-grid{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:14px;
+    }
+
+    .hero-offer-card{
+      position:relative;
+      background:rgba(255,255,255,.14);
+      border:1px solid rgba(255,255,255,.22);
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 15px 40px rgba(27,28,70,.18);
+      backdrop-filter:blur(10px);
+    }
+
+    .hero-offer-card img{
+      width:100%;
+      height:320px;
+      object-fit:cover;
+      object-position:center;
+      display:block;
+    }
+
+    .offer-badge{
+      position:absolute;
+      top:10px;
+      left:10px;
+      z-index:2;
+      font-size:11px;
+      font-weight:700;
+      color:#111827;
+      background:#ffffff;
+      padding:6px 10px;
+      border-radius:999px;
+      box-shadow:0 8px 20px rgba(0,0,0,.12);
+    }
+
+    .offer-caption{
+      position:absolute;
+      left:10px;
+      right:10px;
+      bottom:10px;
+      z-index:2;
+      background:rgba(255,255,255,.94);
+      color:#111827;
+      border-radius:14px;
+      padding:10px 12px;
+      box-shadow:0 10px 20px rgba(0,0,0,.1);
+    }
+
+    .offer-caption strong{
+      display:block;
+      font-size:13px;
+      line-height:1.25;
+      margin-bottom:2px;
+    }
+
+    .offer-caption span{
+      display:block;
+      font-size:11px;
+      color:#6b7280;
+      line-height:1.3;
+    }
+
+    .section{
+      padding:28px 0;
+    }
+
+    .section-card{
+      background:var(--card);
+      border:1px solid #edf1fa;
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+
+    .logo-strip{
+      display:grid;
+      grid-template-columns:repeat(6,1fr);
+      gap:14px;
+      padding:26px;
+    }
+
+    .logo-item{
+      background:linear-gradient(135deg, #cee537, #c66734cc);
+      border:1px solid #e6ebfb;
+      border-radius:18px;
+      text-align:center;
+      padding:18px 12px;
+      font-size:14px;
+      font-weight:700;
+      color:#fff;
+    }
+
+    .section-head{
+      padding:32px 32px 10px;
+    }
+
+    .section-head h2{
+      margin:0;
+      font-size:clamp(26px,3.4vw,40px);
+      line-height:1.12;
+      letter-spacing:-0.03em;
+    }
+
+    .section-head p{
+      margin:12px 0 0;
+      max-width:700px;
+      color:var(--muted);
+      font-size:16px;
+    }
+
+    .features{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:20px;
+      padding:0 32px 32px;
+    }
+
+    .feature{
+      background:linear-gradient(180deg,#ffffff 0%,#f8faff 100%);
+      border:1px solid #e7ecf8;
+      border-radius:20px;
+      padding:24px;
+    }
+
+    .feature-icon{
+      width:52px;
+      height:52px;
+      display:grid;
+      place-items:center;
+      border-radius:16px;
+      background:var(--primary-soft);
+      font-size:22px;
+      margin-bottom:14px;
+    }
+
+    .feature h3{
+      margin:0 0 8px;
+      font-size:20px;
+      letter-spacing:-0.02em;
+    }
+
+    .feature p{
+      margin:0;
+      color:var(--muted);
+      font-size:15px;
+    }
+
+    .steps{
+      padding:0 32px 34px;
+    }
+
+    .steps-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:20px;
+    }
+
+    .step{
+      background:linear-gradient(180deg,#ffffff 0%,#f8faff 100%);
+      border:1px solid #e7ecf8;
+      border-radius:22px;
+      padding:24px;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .step-no{
+      width:44px;
+      height:44px;
+      border-radius:14px;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(135deg,var(--primary),var(--accent));
+      color:#fff;
+      font-weight:800;
+      margin-bottom:14px;
+      box-shadow:0 10px 22px rgba(91,75,255,.22);
+    }
+
+    .step h3{
+      margin:0 0 8px;
+      font-size:20px;
+      letter-spacing:-0.02em;
+    }
+
+    .step p{
+      margin:0;
+      color:var(--muted);
+      font-size:15px;
+    }
+
+    .showcase{
+      padding:0 32px 32px;
+    }
+
+    .showcase-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:20px;
+    }
+
+    .showcase-card{
+      background:linear-gradient(180deg,#fbfcff 0%,#f6f8ff 100%);
+      border:1px solid #e6ebfb;
+      border-radius:22px;
+      overflow:hidden;
+    }
+
+    .showcase-card img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+    }
+
+    .showcase-body{
+      padding:22px;
+    }
+
+    .showcase-body h3{
+      margin:0 0 8px;
+      font-size:22px;
+      letter-spacing:-0.02em;
+    }
+
+    .showcase-body p{
+      margin:0;
+      color:var(--muted);
+      font-size:15px;
+    }
+
+    .cta-section{
+      padding:0 32px 34px;
+    }
+
+    .cta-box{
+      background:linear-gradient(135deg,#131b37 0%, #1d2953 100%);
+      color:#fff;
+      border-radius:26px;
+      padding:34px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .cta-box h2{
+      margin:0 0 8px;
+      font-size:clamp(26px,3.4vw,38px);
+      letter-spacing:-0.03em;
+      line-height:1.1;
+    }
+
+    .cta-box p{
+      margin:0;
+      color:rgba(255,255,255,.82);
+      max-width:700px;
+    }
+
+    .cta-box .btn{
+      flex:0 0 auto;
+    }
+
+    .footer{
+      padding:12px 0 40px;
+    }
+
+    .footer-card{
+      background:#fff;
+      border:1px solid #ebeff8;
+      border-radius:24px;
+      box-shadow:var(--shadow);
+      padding:26px;
+    }
+
+    .footer-top{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      flex-wrap:wrap;
+      padding-bottom:18px;
+      border-bottom:1px solid #edf1f9;
+      margin-bottom:18px;
+    }
+
+    .footer-nav{
+      display:flex;
+      gap:18px;
+      flex-wrap:wrap;
+    }
+
+    .footer-nav a{
+      color:#374151;
+      font-size:14px;
+      font-weight:600;
+    }
+
+    .footer p{
+      margin:0;
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.75;
+    }
+
+    .note{
+      margin-top:14px !important;
+      font-size:13px !important;
+    }
+
+    .sticky-bar{
+      position:fixed;
+      left:0;
+      right:0;
+      bottom:0;
+      z-index:999;
+      padding:12px 16px;
+    }
+
+    .sticky-bar-inner{
+      max-width:1120px;
+      margin:0 auto;
+      background:#ffffff;
+      border:1px solid #e5e7eb;
+      border-radius:18px;
+      box-shadow:0 14px 40px rgba(15,23,42,.16);
+      padding:14px 18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+
+    .sticky-bar-text h3{
+      margin:0;
+      font-size:18px;
+      line-height:1.2;
+      color:#111827;
+    }
+
+    .sticky-bar-text p{
+      margin:4px 0 0;
+      font-size:13px;
+      color:var(--muted);
+      line-height:1.4;
+    }
+
+    .sticky-btn{
+      white-space:nowrap;
+      min-height:48px;
+      padding:0 24px;
+      border-radius:14px;
+      font-size:15px;
+      font-weight:700;
+      background:linear-gradient(135deg, #cce718, #e55507);
+      color:#000;
+      box-shadow:0 12px 24px rgba(15,23,42,.12);
+    }
+
+    .sticky-btn:hover{
+      transform:translateY(-2px);
+      background:linear-gradient(135deg,var(--primary-dark),var(--primary));
+      color:#fff;
+    }
+
+    @media (max-width: 1080px){
+      .hero-wrap{
+        grid-template-columns:1fr;
+      }
+
+      .hero-media{
+        padding:0 24px 24px;
+      }
+
+      .hero-copy{
+        padding:40px 28px 22px;
+      }
+
+      .hero-offer-grid{
+        grid-template-columns:repeat(3,1fr);
+      }
+
+      .hero-offer-card img{
+        height:260px;
+      }
+
+      .features,
+      .steps-grid{
+        grid-template-columns:1fr 1fr;
+      }
+
+      .logo-strip{
+        grid-template-columns:repeat(3,1fr);
+      }
+    }
+
+    @media (max-width: 720px){
+      body{
+        padding-bottom:120px;
+      }
+
+      .container{
+        padding:0 16px;
+      }
+
+      .topbar-inner{
+        font-size:11px;
+        padding:8px 0;
+      }
+
+      .nav{
+        padding:12px 14px;
+      }
+
+      .nav-links{
+        display:none;
+      }
+
+      .nav-cta{
+        min-height:40px;
+        padding:0 14px;
+        font-size:13px;
+      }
+
+      .hero{
+        padding-top:16px;
+      }
+
+      .hero-wrap{
+        border-radius:24px;
+        gap:18px;
+      }
+
+      .hero-copy{
+        padding:10px 16px 16px;
+      }
+
+      .hero h1{
+        font-size:24px;
+        line-height:1.05;
+        max-width:100%;
+      }
+
+      .hero p{
+        font-size:13px;
+        line-height:1.45;
+        margin-top:12px;
+      }
+
+      .hero-actions{
+        gap:8px;
+        margin-top:16px;
+      }
+
+      .btn,
+      .btn-primary,
+      .btn-secondary{
+        width:100%;
+        min-height:42px;
+        font-size:14px;
+      }
+
+      .hero-media{
+        padding:18px 16px 16px;
+      }
+
+      .hero-offer-grid{
+        grid-template-columns:1fr;
+        gap:10px;
+      }
+
+      .hero-offer-card{
+        display:grid;
+        grid-template-columns:92px 1fr;
+        align-items:stretch;
+        min-height:92px;
+      }
+
+      .hero-offer-card img{
+        height:100%;
+        min-height:92px;
+        border-radius:0;
+      }
+
+      .offer-badge{
+        top:8px;
+        left:8px;
+        font-size:10px;
+        padding:5px 8px;
+      }
+
+      .offer-caption{
+        position:static;
+        background:#fff;
+        box-shadow:none;
+        border-radius:0;
+        padding:12px 12px 10px;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+      }
+
+      .offer-caption strong{
+        font-size:12px;
+        margin-bottom:3px;
+      }
+
+      .offer-caption span{
+        font-size:10px;
+      }
+
+      .section{
+        padding:16px 0;
+      }
+
+      .section-head,
+      .steps,
+      .showcase,
+      .cta-section{
+        padding-left:16px;
+        padding-right:16px;
+      }
+
+      .section-head{
+        padding-top:22px;
+        padding-bottom:8px;
+      }
+
+      .section-head h2{
+        font-size:22px;
+        line-height:1.1;
+      }
+
+      .section-head p{
+        font-size:13px;
+        margin-top:8px;
+      }
+
+      .logo-strip{
+        grid-template-columns:repeat(2,1fr);
+        gap:10px;
+        padding:16px;
+      }
+
+      .logo-item{
+        padding:12px 10px;
+        font-size:12px;
+        border-radius:14px;
+      }
+
+      .features{
+        padding:0 16px 16px;
+      }
+
+      .features,
+      .steps-grid,
+      .showcase-grid{
+        grid-template-columns:1fr;
+        gap:12px;
+      }
+
+      .feature,
+      .step,
+      .showcase-card{
+        border-radius:16px;
+      }
+
+      .feature{
+        padding:16px;
+      }
+
+      .feature-icon{
+        width:42px;
+        height:42px;
+        font-size:18px;
+        margin-bottom:10px;
+      }
+
+      .feature h3{
+        font-size:16px;
+        margin-bottom:5px;
+      }
+
+      .feature p{
+        font-size:13px;
+        line-height:1.45;
+      }
+
+      .step{
+        padding:16px;
+      }
+
+      .step-no{
+        width:38px;
+        height:38px;
+        font-size:14px;
+        margin-bottom:10px;
+      }
+
+      .step h3{
+        font-size:16px;
+        margin-bottom:5px;
+      }
+
+      .step p{
+        font-size:13px;
+        line-height:1.45;
+      }
+
+      .showcase-card img{
+        height:180px;
+      }
+
+      .showcase-body{
+        padding:16px;
+      }
+
+      .showcase-body h3{
+        font-size:17px;
+        margin-bottom:5px;
+      }
+
+      .showcase-body p{
+        font-size:13px;
+        line-height:1.45;
+      }
+
+      .cta-box{
+        padding:20px 16px;
+        border-radius:18px;
+      }
+
+      .cta-box h2{
+        font-size:22px;
+      }
+
+      .cta-box p{
+        font-size:13px;
+      }
+
+      .footer-card{
+        padding:18px 16px;
+        border-radius:18px;
+      }
+
+      .footer p{
+        font-size:12px;
+        line-height:1.6;
+      }
+
+      .sticky-bar{
+        padding:10px 12px;
+      }
+
+      .sticky-bar-inner{
+        flex-direction:column;
+        align-items:stretch;
+        padding:12px;
+        gap:10px;
+      }
+
+      .sticky-bar-text h3{
+        font-size:15px;
+      }
+
+      .sticky-bar-text p{
+        font-size:11px;
+      }
+
+      .sticky-btn{
+        width:100%;
+        justify-content:center;
+        min-height:42px;
+        font-size:14px;
+      }
+      .sticky-bar-text h3{
+        display: none;
+      }
+      .sticky-bar-text p{
+        display: none;
+      }
+      .title-logo{
+        font-size: 12px;
+      }
+      .logo{
+        width: 50px;
+      }
+    }
+    .logo{
+        width: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-inner">
+        Independent guide to apps, surveys, and digital offers
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="nav">
+        <a href="#" class="brand">
+          <img src="./logo.png" alt="" class="logo">
+          <span class="title-logo">
+            Online Offers Guide
+          </span>
+        </a>
+
+        <nav class="nav-links">
+          <a href="#discover">Discover</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#categories">Categories</a>
+        </nav>
+
+        <a class="nav-cta" href="https://inpmz.ttrk.io/click" target="_blank" rel="nofollow sponsored noopener">
+          Visit Platform
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+         
+
+      <div class="hero-wrap">
+
+        <div class="hero-media">
+          <div class="">
+              <img src="./netflix.webp" alt="Offer image 1" style="width: 100%;">
+            </div>
+
+            <div class="">
+              <img src="./dice-dreams.webp" alt="Offer image 2" style="width: 100%;">
+            </div>
+
+            <div class="">
+              <img src="./tiktok.webp" alt="Offer image 3" style="width: 100%;">
+            </div>
+          </div>
+
+        <div class="hero-copy">
+
+          <h1>
+            Explore apps, games and
+            surveys
+            offers in one
+            place
+          </h1>
+
+          <p>
+            Discover a streamlined way to browse popular online activities,
+            mobile app offers, survey opportunities, and featured platforms
+            through one clean guide page.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://inpmz.ttrk.io/click" target="_blank" rel="nofollow sponsored noopener">
+              Free Signup Now
+            </a>
+          </div>
+
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+    <section class="section" id="discover">
+      <div class="container">
+        <div class="section-card">
+          <div class="section-head">
+            <h2>Popular categories users often explore</h2>
+            <p>
+              This page is designed as a lightweight overview for people who want
+              to review common digital offer categories before visiting the
+              official platform.
+            </p>
+          </div>
+
+          <div class="logo-strip">
+            <div class="logo-item">Mobile Apps</div>
+            <div class="logo-item">Surveys</div>
+            <div class="logo-item">Product Trials</div>
+            <div class="logo-item">Games</div>
+            <div class="logo-item">Digital Services</div>
+            <div class="logo-item">New Offers</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <div class="section-card">
+          <div class="section-head">
+            <h2>How the platform journey generally works</h2>
+            <p>
+              Keep the message informational and simple. Present the journey as a
+              browsing and participation flow, not as a guaranteed result or
+              financial promise.
+            </p>
+          </div>
+
+          <div class="steps">
+            <div class="steps-grid">
+              <div class="step">
+                <div class="step-no">1</div>
+                <h3>Browse categories</h3>
+                <p>
+                  Review available sections such as surveys, apps, games, or
+                  digital sign-up offers and choose what interests you most.
+                </p>
+              </div>
+
+              <div class="step">
+                <div class="step-no">2</div>
+                <h3>Check requirements</h3>
+                <p>
+                  Open the official platform, read the listed task or offer
+                  details, and decide whether the activity fits your preferences.
+                </p>
+              </div>
+
+              <div class="step">
+                <div class="step-no">3</div>
+                <h3>Continue on the official site</h3>
+                <p>
+                  Complete any next steps directly on the partner platform,
+                  subject to that platform’s own terms, availability, and rules.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-card">
+          <div class="section-head">
+            <h2>Featured activity types</h2>
+            <p>
+              Present the main categories clearly so the user understands what the
+              platform may include without using aggressive or risky claims.
+            </p>
+          </div>
+
+          <div class="features">
+            <div class="feature">
+              <div class="feature-icon">📱</div>
+              <h3>App discovery</h3>
+              <p>
+                Explore mobile-first offers, app-related tasks, and featured
+                digital experiences across multiple categories.
+              </p>
+            </div>
+
+            <div class="feature">
+              <div class="feature-icon">📝</div>
+              <h3>Survey activities</h3>
+              <p>
+                Review opinion-based activities and questionnaire-style options
+                that may appear on the official platform.
+              </p>
+            </div>
+
+            <div class="feature">
+              <div class="feature-icon">🎮</div>
+              <h3>Interactive offers</h3>
+              <p>
+                Discover game and digital service categories in a simple guide
+                layout without cluttered messaging.
+              </p>
+            </div>
+          </div>
+
+          <div class="showcase">
+            <div class="showcase-grid">
+              <div class="showcase-card">
+                <img
+                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80"
+                  alt="Laptop screen showing online dashboard"
+                />
+                <div class="showcase-body">
+                  <h3>Digital offers overview</h3>
+                  <p>
+                    A clean section for introducing platform categories, user flow,
+                    and call-to-action elements in an ad-friendly presentation.
+                  </p>
+                </div>
+              </div>
+
+              <div class="showcase-card">
+                <img
+                  src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80"
+                  alt="Close up of a smartphone and technology workspace"
+                />
+                <div class="showcase-body">
+                  <h3>Mobile-first experience</h3>
+                  <p>
+                    Optimized spacing, stacked layouts, and responsive cards help
+                    the page work smoothly across desktop and mobile devices.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta-section">
+            <div class="cta-box">
+              <div>
+                <h2>Ready to continue to the official platform?</h2>
+                <p>
+                  Visit the partner page to explore currently available categories,
+                  offers, and participation options directly on the source site.
+                </p>
+              </div>
+
+              <a class="btn btn-primary" href="https://inpmz.ttrk.io/click" target="_blank" rel="nofollow sponsored noopener">
+                Visit Official Platform
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-card">
+        <div class="footer-top">
+          <a href="#" class="brand">
+            <span class="brand-mark">O</span>
+            <span>
+              Online Offers Guide
+              <small>Independent overview page</small>
+            </span>
+          </a>
+
+          <nav class="footer-nav">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+          </nav>
+        </div>
+
+        <p>
+          Disclosure: This website contains affiliate links. If you click through
+          to a partner platform and take an action, we may receive a commission at
+          no additional cost to you. This page is provided as an independent guide
+          for informational purposes only.
+        </p>
+
+        <p class="note">
+          We do not guarantee results, outcomes, availability, or user experience.
+          Any participation, registration, or activity takes place on the official
+          third-party platform and is subject to that platform’s own policies,
+          eligibility criteria, and terms.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="sticky-bar">
+    <div class="sticky-bar-inner">
+      <div class="sticky-bar-text">
+        <h3>Explore available offers on the official platform</h3>
+        <p>Browse categories, review activities, and continue safely to the partner page.</p>
+      </div>
+      <a class="btn sticky-btn" href="https://inpmz.ttrk.io/click" target="_blank" rel="nofollow sponsored noopener">
+        Start Exploring
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
