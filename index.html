@@ -954,6 +954,84 @@
     .logo{
         width: 50px;
     }
+
+    /* SECTION (RENAMED) */
+.work-benefits-section{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+}
+
+@media(max-width:800px){
+  .work-benefits-section{
+    grid-template-columns:1fr;
+  }
+}
+
+/* CARD */
+.card{
+  background:linear-gradient(135deg, #cee537, #c66734cc);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:18px;
+  padding:24px;
+  box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+/* TITLE */
+.title{
+  font-size:20px;
+  font-weight:700;
+  margin-bottom:16px;
+}
+
+/* STEPS */
+.step{
+  display:flex;
+  gap:12px;
+  margin-bottom:14px;
+  font-size:15px;
+}
+
+.step-number{
+  min-width:32px;
+  height:32px;
+  border-radius:10px;
+  background:linear-gradient(135deg,#7b35ff,#ff4bc7);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  color:#fff;
+}
+
+/* BENEFITS */
+.benefit{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  margin-bottom:12px;
+  font-size:15px;
+}
+
+.check{
+  color:#2ee59d;
+  font-weight:700;
+}
+
+/* IMAGE */
+.mockup{
+  margin-top:16px;
+  border-radius:14px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.08);
+}
+
+.mockup img{
+  width:100%;
+  display:block;
+}
   </style>
 </head>
 <body>
@@ -1012,17 +1090,14 @@
         <div class="hero-copy">
 
           <h1>
-            Explore apps, games and
-            surveys
-            offers in one
-            place
+           Explore Online Rewards with Simple Tasks & Games
           </h1>
 
           <p>
-            Discover a streamlined way to browse popular online activities,
-            mobile app offers, survey opportunities, and featured platforms
-            through one clean guide page.
+            Discover task-based activities and games where users can earn rewards through verified platforms.
           </p>
+
+          <p><strong>Trusted by 500,000+ users</strong></p>
 
           <div class="hero-actions">
             <a class="btn btn-primary" href="https://inpmz.ttrk.io/click" target="_blank" rel="nofollow sponsored noopener">
@@ -1063,51 +1138,64 @@
       </div>
     </section>
 
-    <section class="section" id="how-it-works">
-      <div class="container">
-        <div class="section-card">
-          <div class="section-head">
-            <h2>How the platform journey generally works</h2>
-            <p>
-              Keep the message informational and simple. Present the journey as a
-              browsing and participation flow, not as a guaranteed result or
-              financial promise.
-            </p>
-          </div>
+   <div class="work-benefits-section">
 
-          <div class="steps">
-            <div class="steps-grid">
-              <div class="step">
-                <div class="step-no">1</div>
-                <h3>Browse categories</h3>
-                <p>
-                  Review available sections such as surveys, apps, games, or
-                  digital sign-up offers and choose what interests you most.
-                </p>
-              </div>
+  <!-- LEFT -->
+  <div class="card">
+    <div class="title">HOW IT WORKS</div>
 
-              <div class="step">
-                <div class="step-no">2</div>
-                <h3>Check requirements</h3>
-                <p>
-                  Open the official platform, read the listed task or offer
-                  details, and decide whether the activity fits your preferences.
-                </p>
-              </div>
+    <div class="step">
+      <div class="step-number">1</div>
+      <div>Sign up for free in 30 seconds</div>
+    </div>
 
-              <div class="step">
-                <div class="step-no">3</div>
-                <h3>Continue on the official site</h3>
-                <p>
-                  Complete any next steps directly on the partner platform,
-                  subject to that platform’s own terms, availability, and rules.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="step">
+      <div class="step-number">2</div>
+      <div>Complete games, surveys, or simple tasks</div>
+    </div>
+
+    <div class="step">
+      <div class="step-number">3</div>
+      <div>Earn rewards instantly Gift Cards</div>
+    </div>
+
+    <div class="step">
+      <div class="step-number">4</div>
+      <div>Redeem your rewards anytime in just a few clicks</div>
+    </div>
+
+    <div class="mockup">
+      <img src="https://via.placeholder.com/600x350" alt="">
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="card">
+    <div class="title">BENEFITS</div>
+
+    <div class="step">
+      <div class="step-number">1</div>
+      <div>Safe & verified rewards for users</div>
+    </div>
+
+     <div class="step">
+      <div class="step-number">2</div>
+      <div>Easy tasks, no credit card required</div>
+    </div>
+
+     <div class="step">
+      <div class="step-number">3</div>
+      <div>Play games and complete offers for points</div>
+    </div>
+
+     <div class="step">
+      <div class="step-number">4</div>
+      <div>Earn instantly Gift Cards</div>
+    </div>
+
+  </div>
+
+</div>
 
     <section class="section" id="categories">
       <div class="container">
